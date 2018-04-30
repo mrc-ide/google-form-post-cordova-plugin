@@ -1,0 +1,19 @@
+{
+  "name": "google-form-post",
+  "version": "1.0.0",
+  "description": "Submits a response to a google form",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrc-ide/google-form-post.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mrc-ide/google-form-post/issues"
+  },
+  "homepage": "https://github.com/mrc-ide/google-form-post#readme"
+}
