@@ -20,7 +20,17 @@
 
         <source-file src="src/android/GoogleFormPost.java"
             target-dir="src/org/apache/cordova/plugin" />
+    </platform>
+    <platform name="browser">
+        <config-file target="config.xml" parent="/*">
+            <feature name="GoogleFormPost">
+                <param name="browser-package" value="org.imperial.dide.GoogleFormPostPlugin" />
+            </feature>
+        </config-file>
 
+        <js-module src="src/browser/GoogleFormPostProxy.js" name="GoogleFormPostProxy">
+            <runs />
+        </js-module>
     </platform>
 
 </plugin>
