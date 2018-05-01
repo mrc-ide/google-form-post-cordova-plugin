@@ -21,10 +21,12 @@ public class GoogleFormPost extends CordovaPlugin {
     }
 
     private void submit(String message, CallbackContext callbackContext) {
-        if (message != null && message.length() > 0) {
-            callbackContext.success(message);
-        } else {
-            callbackContext.error("Expected one non-empty string argument.");
-        }
+        String url = "https://docs.google.com/forms/d/e/1FAIpQLSdG0fcvkwm5S0inTCld5Q1ZW8iK5jAItqLh7Yon0tSOYXbzaA/formResponse"
+
+        String questionOne = "entry.480071232"
+        HttpRequest mReq = new HttpRequest();
+        String response = mReq.sendPost(url, "entry.480071232=Option 1");
+
+        callbackContext.success(response);
     }
 }
