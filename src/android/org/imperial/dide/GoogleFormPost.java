@@ -46,6 +46,6 @@ public class GoogleFormPost extends CordovaPlugin {
             wr.write(postData);
         }
 
-        callbackContext.success(response);
+        callbackContext.success(conn.getResponseCode());
     }
 }
