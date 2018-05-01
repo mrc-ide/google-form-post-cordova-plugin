@@ -24,7 +24,7 @@
     <platform name="browser">
         <config-file target="config.xml" parent="/*">
             <feature name="GoogleFormPost">
-                <param name="browser-package" value="org.imperial.dide.GoogleFormPostPlugin" />
+                <param name="browser-package" value="GoogleFormPost" />
             </feature>
         </config-file>
 
