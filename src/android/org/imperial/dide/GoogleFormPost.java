@@ -29,7 +29,7 @@ public class GoogleFormPost extends CordovaPlugin {
         return false;
     }
 
-    private void submit(String formUrl, String urlParameters, String CallbackContext callbackContext) throws IOException {
+    private void submit(String formUrl, String urlParameters, CallbackContext callbackContext) throws IOException {
 
         byte[] postData = urlParameters.getBytes(StandardCharsets.UTF_8);
         int postDataLength = postData.length;
