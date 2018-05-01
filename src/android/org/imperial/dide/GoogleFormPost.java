@@ -17,9 +17,10 @@ public class GoogleFormPost extends CordovaPlugin {
     @Override
     public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
         if (action.equals("submit")) {
-            String urlParameters = args.getString(0);
+            String url = args.getString(0);
+            String urlParameters = args.getString(1);
             try {
-                this.submit(urlParameters, callbackContext);
+                this.submit(url, urlParameters, callbackContext);
                 return true;
             } catch (IOException e) {
                 e.printStackTrace();
@@ -28,12 +29,11 @@ public class GoogleFormPost extends CordovaPlugin {
         return false;
     }
 
-    private void submit(String urlParameters, CallbackContext callbackContext) throws IOException {
+    private void submit(String formUrl, String urlParameters, String CallbackContext callbackContext) throws IOException {
 
         byte[] postData = urlParameters.getBytes(StandardCharsets.UTF_8);
         int postDataLength = postData.length;
-        String request = "https://docs.google.com/forms/d/e/1FAIpQLSdG0fcvkwm5S0inTCld5Q1ZW8iK5jAItqLh7Yon0tSOYXbzaA/formResponse";
-        URL url = new URL(request);
+        URL url = new URL(formUrl);
         HttpURLConnection conn = (HttpURLConnection)url.openConnection();
         conn.setDoOutput(true);
         conn.setInstanceFollowRedirects(false);
