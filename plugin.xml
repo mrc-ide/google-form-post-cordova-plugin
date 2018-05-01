@@ -14,23 +14,12 @@
     <platform name="android">
         <config-file target="config.xml" parent="/*">
             <feature name="GoogleFormPost" >
-                <param name="android-package" value="org.imperial.dide.GoogleFormPostPlugin"/>
+                <param name="android-package" value="org.imperial.dide.GoogleFormPost"/>
             </feature>
         </config-file>
 
         <source-file src="src/android/GoogleFormPost.java"
-            target-dir="src/org/apache/cordova/plugin" />
-    </platform>
-    <platform name="browser">
-        <config-file target="config.xml" parent="/*">
-            <feature name="GoogleFormPost">
-                <param name="browser-package" value="GoogleFormPost" />
-            </feature>
-        </config-file>
-
-        <js-module src="src/browser/GoogleFormPostProxy.js" name="GoogleFormPostProxy">
-            <runs />
-        </js-module>
+            target-dir="src" />
     </platform>
 
 </plugin>
