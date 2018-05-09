@@ -1,4 +1,4 @@
-package android.org.imperial.dide;
+package org.imperial.dide;
 
 import org.apache.cordova.CordovaPlugin;
 import org.apache.cordova.CallbackContext;
