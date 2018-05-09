@@ -1,0 +1,54 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/aehill/Documents/dev/google-form-post/src/main/AndroidManifest.xml:2:1-28:12
+INJECTED from /home/aehill/Documents/dev/google-form-post/src/main/AndroidManifest.xml:2:1-28:12
+INJECTED from /home/aehill/Documents/dev/google-form-post/src/main/AndroidManifest.xml:2:1-28:12
+MERGED from [org.apache.cordova:framework:7.1.0] /home/aehill/.gradle/caches/transforms-1/files-1.1/framework-7.1.0.aar/8d540c10bd559bec5198193fcc3d4c0f/AndroidManifest.xml:20:1-27:12
+INJECTED from /home/aehill/Documents/dev/google-form-post/src/main/AndroidManifest.xml:2:1-28:12
+INJECTED from /home/aehill/Documents/dev/google-form-post/src/main/AndroidManifest.xml:2:1-28:12
+	package
+		ADDED from /home/aehill/Documents/dev/google-form-post/src/main/AndroidManifest.xml:6:5-32
+	android:versionName
+		ADDED from /home/aehill/Documents/dev/google-form-post/src/main/AndroidManifest.xml:5:5-30
+		INJECTED from /home/aehill/Documents/dev/google-form-post/src/main/AndroidManifest.xml
+		INJECTED from /home/aehill/Documents/dev/google-form-post/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/aehill/Documents/dev/google-form-post/src/main/AndroidManifest.xml:3:5-63
+	android:versionCode
+		ADDED from /home/aehill/Documents/dev/google-form-post/src/main/AndroidManifest.xml:4:5-28
+		INJECTED from /home/aehill/Documents/dev/google-form-post/src/main/AndroidManifest.xml
+		INJECTED from /home/aehill/Documents/dev/google-form-post/src/main/AndroidManifest.xml
+uses-sdk
+ADDED from /home/aehill/Documents/dev/google-form-post/src/main/AndroidManifest.xml:9:5-74
+MERGED from [org.apache.cordova:framework:7.1.0] /home/aehill/.gradle/caches/transforms-1/files-1.1/framework-7.1.0.aar/8d540c10bd559bec5198193fcc3d4c0f/AndroidManifest.xml:25:5-44
+MERGED from [org.apache.cordova:framework:7.1.0] /home/aehill/.gradle/caches/transforms-1/files-1.1/framework-7.1.0.aar/8d540c10bd559bec5198193fcc3d4c0f/AndroidManifest.xml:25:5-44
+	android:targetSdkVersion
+		ADDED from /home/aehill/Documents/dev/google-form-post/src/main/AndroidManifest.xml:9:42-71
+	android:minSdkVersion
+		ADDED from /home/aehill/Documents/dev/google-form-post/src/main/AndroidManifest.xml:9:15-41
+application
+ADDED from /home/aehill/Documents/dev/google-form-post/src/main/AndroidManifest.xml:11:5-27:19
+	android:supportsRtl
+		ADDED from /home/aehill/Documents/dev/google-form-post/src/main/AndroidManifest.xml:13:9-35
+	android:allowBackup
+		ADDED from /home/aehill/Documents/dev/google-form-post/src/main/AndroidManifest.xml:12:9-35
+activity#com.example.myapp.MainActivity
+ADDED from /home/aehill/Documents/dev/google-form-post/src/main/AndroidManifest.xml:17:9-22:20
+	android:name
+		ADDED from /home/aehill/Documents/dev/google-form-post/src/main/AndroidManifest.xml:17:19-47
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /home/aehill/Documents/dev/google-form-post/src/main/AndroidManifest.xml:18:13-21:29
+action#android.intent.action.MAIN
+ADDED from /home/aehill/Documents/dev/google-form-post/src/main/AndroidManifest.xml:19:17-69
+	android:name
+		ADDED from /home/aehill/Documents/dev/google-form-post/src/main/AndroidManifest.xml:19:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /home/aehill/Documents/dev/google-form-post/src/main/AndroidManifest.xml:20:17-77
+	android:name
+		ADDED from /home/aehill/Documents/dev/google-form-post/src/main/AndroidManifest.xml:20:27-74
+activity#com.example.myapp.DisplayMessageActivity
+ADDED from /home/aehill/Documents/dev/google-form-post/src/main/AndroidManifest.xml:24:9-26:58
+	android:parentActivityName
+		ADDED from /home/aehill/Documents/dev/google-form-post/src/main/AndroidManifest.xml:26:13-55
+	android:name
+		ADDED from /home/aehill/Documents/dev/google-form-post/src/main/AndroidManifest.xml:25:13-51
