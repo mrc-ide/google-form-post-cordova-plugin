@@ -14,9 +14,12 @@ public class GoogleFormPost extends CordovaPlugin {
 
     private HttpRequestManager httpRequestManager;
 
+    public GoogleFormPost() {
+        this.httpRequestManager = new HttpRequestManager();
+    }
+
     public GoogleFormPost(HttpRequestManager httpRequestManager) {
-        this.httpRequestManager =
-                httpRequestManager == null ? new HttpRequestManager() : httpRequestManager;
+        this.httpRequestManager = httpRequestManager;
     }
 
     @Override
