@@ -1,0 +1,30 @@
+buildscript {
+    repositories {
+        mavenCentral()
+        jcenter()
+        google()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.1.2'
+    }
+}
+
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    lintOptions {
+        abortOnError false
+    }
+}
+
+repositories {
+    mavenCentral()
+    jcenter()
+    google()
+}
+
+dependencies {
+    api 'org.apache.cordova:framework:7.1.0'
+    api 'junit:junit:4.12'
+}

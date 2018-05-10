@@ -18,7 +18,7 @@
             </feature>
         </config-file>
 
-        <source-file src="src/android/org/imperial/dide/GoogleFormPost.java"
+        <source-file src="src/main/java/org/imperial/dide/GoogleFormPost.java"
             target-dir="src" />
     </platform>
 
