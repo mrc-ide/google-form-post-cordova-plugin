@@ -1,14 +1,14 @@
 {
   "name": "google-form-post",
   "version": "1.0.0",
-  "description": "Submits a response to a google form",
+  "description": "Cordova plugin that submits a response to a google form",
   "main": "index.js",
   "scripts": {
     "test": "mocha --compilers js:babel-core/register www/test/*.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mrc-ide/google-form-post.git"
+    "url": "git+https://github.com/mrc-ide/google-form-post-cordova-plugin.git"
   },
   "babel": {
     "presets": [
@@ -18,9 +18,9 @@
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/mrc-ide/google-form-post/issues"
+    "url": "https://github.com/mrc-ide/google-form-post-cordova-plugin/issues"
   },
-  "homepage": "https://github.com/mrc-ide/google-form-post#readme",
+  "homepage": "https://github.com/mrc-ide/google-form-post-cordova-plugin#readme",
   "dependencies": {
     "babel-core": "^6.26.3",
     "babel-preset-es2015": "^6.24.1",
