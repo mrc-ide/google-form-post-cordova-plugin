@@ -11,13 +11,20 @@
       <engine name="cordova-android" version=">=4.0.0" />
     </engines>
 
+    <asset src="www/googleFormPost.js" target="js/googleFormPost.js"/>
+
+    <js-module src="www/googleFormPost.js" name="googleFormPost">
+        <clobbers target="googleFormPost" />
+    </js-module>
+
     <platform name="android">
         <config-file target="config.xml" parent="/*">
             <feature name="GoogleFormPost" >
                 <param name="android-package" value="org.imperial.dide.GoogleFormPost"/>
             </feature>
         </config-file>
-
+        <source-file src="src/main/java/org/imperial/dide/HttpRequestManager.java"
+            target-dir="src" />
         <source-file src="src/main/java/org/imperial/dide/GoogleFormPost.java"
             target-dir="src" />
     </platform>

@@ -3,4 +3,5 @@ build
 lib
 local.properties
 .gradle
+node_modules
 google-form-post.iml
