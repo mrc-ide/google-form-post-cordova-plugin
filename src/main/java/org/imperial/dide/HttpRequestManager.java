@@ -8,7 +8,7 @@ import java.nio.charset.StandardCharsets;
 
 public class HttpRequestManager {
 
-    public int Post(String formUrl, String parameters) throws IOException {
+    public int post(String formUrl, String parameters) throws IOException {
 
         byte[] postData = parameters.getBytes(StandardCharsets.UTF_8);
         int postDataLength = postData.length;

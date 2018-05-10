@@ -5,11 +5,6 @@ import org.apache.cordova.CallbackContext;
 import org.json.JSONArray;
 import org.json.JSONException;
 
-import java.io.DataOutputStream;
-import java.net.HttpURLConnection;
-import java.net.URL;
-import java.nio.charset.StandardCharsets;
-
 public class GoogleFormPost extends CordovaPlugin {
 
     private HttpRequestManager httpRequestManager;
@@ -42,7 +37,7 @@ public class GoogleFormPost extends CordovaPlugin {
 
         try {
 
-            int statusCode = httpRequestManager.Post(formUrl, parameters);
+            int statusCode = httpRequestManager.post(formUrl, parameters);
             if (statusCode == 200) {
                 callbackContext.success(statusCode);
             }

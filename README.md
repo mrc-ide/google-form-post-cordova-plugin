@@ -28,3 +28,7 @@ Steps to set up your environment for local development:
 1. Install and run Android Studio (making sure an SDK is installed)
 1. Add `export ANDROID_HOME=/some/path` to your .profile file
 1. Run `./gradlew build`
+
+## Tests
+JUnit tests can be run through the IDE or by running `./gradlew test`. There are no
+javscript tests right now, as the interface is so simple.

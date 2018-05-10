@@ -18,9 +18,9 @@ public class GoogleFormPostTests {
     private CallbackContext callbackContextMock = mock(CallbackContext.class);
 
     @Test
-    public void ReturnsSuccessIfFormPostSuccessful() throws JSONException, IOException {
+    public void returnsSuccessIfFormPostSuccessful() throws JSONException, IOException {
 
-        when(httpRequestManagerMock.Post(anyString(), anyString())).thenReturn(200);
+        when(httpRequestManagerMock.post(anyString(), anyString())).thenReturn(200);
 
         GoogleFormPost sut = new GoogleFormPost(httpRequestManagerMock);
         sut.execute("submit", new JSONArray("['url', 'params']"), callbackContextMock);
@@ -30,9 +30,9 @@ public class GoogleFormPostTests {
 
 
     @Test
-    public void ReturnsErrorIfFormPostUnSuccessful() throws JSONException, IOException {
+    public void returnsErrorIfFormPostUnSuccessful() throws JSONException, IOException {
 
-        when(httpRequestManagerMock.Post(anyString(), anyString())).thenReturn(404);
+        when(httpRequestManagerMock.post(anyString(), anyString())).thenReturn(404);
 
         GoogleFormPost sut = new GoogleFormPost(httpRequestManagerMock);
         sut.execute("submit", new JSONArray("['url', 'params']"), callbackContextMock);
