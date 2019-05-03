@@ -1,8 +1,8 @@
 buildscript {
     repositories {
-        mavenCentral()
         jcenter()
         google()
+        mavenCentral()
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.1.2'
@@ -12,22 +12,30 @@ buildscript {
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 23
+    compileSdkVersion 19
     lintOptions {
         abortOnError false
+    }
+    defaultConfig {
+        minSdkVersion 19
+        //noinspection ExpiredTargetSdkVersion
+        targetSdkVersion 19
     }
 }
 
 repositories {
-    mavenCentral()
     jcenter()
     google()
+    mavenCentral()
+    maven {
+        url "https://dl.bintray.com/cordova/maven"
+    }
 }
 
 dependencies {
     api 'org.json:json:20150729'
-    api 'org.apache.cordova:framework:7.1.0'
+    api 'org.apache.cordova:framework:6.4.0:release@aar'
     api 'junit:junit:4.12'
     api "org.mockito:mockito-core:2.18.3"
-    api "org.assertj:assertj-core:3.9.1"
+    api "org.assertj:assertj-core:2.0.0"
 }

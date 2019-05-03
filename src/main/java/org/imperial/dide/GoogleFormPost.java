@@ -5,11 +5,6 @@ import org.apache.cordova.CallbackContext;
 import org.json.JSONArray;
 import org.json.JSONException;
 
-import java.io.DataOutputStream;
-import java.net.HttpURLConnection;
-import java.net.URL;
-import java.nio.charset.StandardCharsets;
-
 public class GoogleFormPost extends CordovaPlugin {
 
     private HttpRequestManager httpRequestManager;
